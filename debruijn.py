@@ -2,10 +2,10 @@
 # Construct a tiling which looks like tumbling block on the left hand side, and
 # like a penrose tiling on the right hand side.
 #
-# Usage:  debruijn.py > tumblingblockpenrose.eps
+# Usage:  debruijn.py 
 #
-# This also creates (as a side effect) debruijn.eps, a picture of the de Bruijn
-# lines from which the tiling is derived.
+# This creates tumblingblockpenrose.eps, and debruijn.eps.  The script then
+# attempts to run epspdf to generate pdf files from the output.
 
 from subprocess import call
 import sys

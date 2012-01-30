@@ -1,5 +1,9 @@
 Python code for producing a rhombus tiling.  The tiling looks like the tumbling block pattern on the left side, and a penrose tiling on the right side.  This was inspired by the mosaic "Tesselation Tango", designed by Linda Vanderkolk and Scott Frankenberger.
 
+To create the tilings, run debruijn.py.  The script relies on "epspdf" to generate pdf files; this program comes with (e.g.) texlive.  If you're content to have eps images, then just comment out the calls to epspdf.
+
+I have made no attempt to optimize the eps output at all, so the eps files this script produces are unnecessarily large and verbose.  They get optimized down fairly well by epspdf, though.
+
 For more details, see the LaTeX document in this repository.
 
 
