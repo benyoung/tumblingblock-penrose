@@ -1,0 +1,38 @@
+\documentclass[11pt]{article}
+
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0in}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+\Large
+A Mathematician's Response to Tessellation Tango --- Ben Young
+\end{center}
+
+\includegraphics[width=\textwidth]{tumblingblockpenrose.pdf}
+
+I spent a term as a postdoc MSRI in the fall of 2010.  While riding the bus up and down the hill, I spent quite a while thinking about Tessellation Tango, the mosaic installed by the front door.  Of course, like most mathematicians, I'm not really able to leave my mathematical mindset at the office.  To me, Tessellation Tango posed the following question: 
+\begin{center}
+\emph{How do you fill in the middle part of the picture with tiles?}
+\end{center}
+To be more precise, I wanted to construct a tiling which interpolates between a ``tumbling block''  tiling and a Penrose tiling.  My attempt\footnote{Source code available at \texttt{github.com/benyoung/tessellationtango}, under the Gnu Public Licence.  Many thanks to Rachael Young for help choosing colors and making the tiling visually appealing.} is shown above.  The colors are different than those in Tessellation Tango: they are chosen to show the tiling's structure.
+
+I constructed my tiling using \emph{De Bruijn lines}\footnote{N.G. de Bruijn. Algebraic theory of Penrose's non-periodic tilings of the plane. Kon. Nederl. Akad. Wetensch. Proc. Ser. A, 1981.}, as shown below.  You should think of this picture as a set of ``instructions'' for assembling the tiling.  Whenever you see two lines cross, place a tile in the mosaic.  The tile's four sides should be perpendicular to the intersecting lines, so you know the \emph{shape} and \emph{orientation} of the tile.  You also know which tiles are \emph{neighbours} --- those coming from neighbouring crossings on the same line.  However, the task of determining the \emph{locations} of the tiles and placing them in the picture is left to the mosaicist (or, in my case, my computer).
+
+
+\includegraphics[width=\textwidth]{debruijn.pdf}
+
+\small
+\setlength{\parskip}{0in}
+Tumbling Block Tiling
+\hfill
+Penrose Tiling
+
+
+
+\end{document}
